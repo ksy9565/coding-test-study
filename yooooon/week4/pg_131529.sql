@@ -1,0 +1,7 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/131529
+
+SELECT SUBSTRING(PRODUCT_CODE, 1, 2) AS CATEGORY,
+        COUNT(*) AS PRODUCTS
+FROM PRODUCT
+GROUP BY CATEGORY
+ORDER BY CATEGORY
